@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripción 1º DAW</title>
+</head>
+<body>
+ 
+    <h1>Inscripción al curso 1º DAW</h1>
+ 
+    <!-- ===================== MULTIMEDIA ===================== -->
+ 
+    <!-- img: src = file, alt = mandatory text, title = tooltip, width/height in px without units -->
+    <img src="imagen.jpg" alt="Fachada del instituto" title="Nuestro instituto" width="400" height="250">
+ 
+    <!-- img inside a: the image is a link -->
+    <p>
+        <a href="https://www.w3schools.com">
+            <img src="logo.png" alt="Logo de W3Schools" width="120" height="60">
+        </a>
+    </p>
+ 
+    <!-- figure + figcaption: image with a caption -->
+    <figure>
+        <img src="aula.jpg" alt="Aula de informática" width="400" height="250">
+        <figcaption>El aula de 1º DAW</figcaption>
+    </figure>
+ 
+    <!-- audio: controls shows the player. source = alternative formats. The text is for old browsers -->
+    <h2>Mensaje de bienvenida</h2>
+    <audio controls>
+        <source src="audio.mp3" type="audio/mpeg">
+        <source src="audio.ogg" type="audio/ogg">
+        Tu navegador no soporta audio.
+    </audio>
+ 
+    <!-- video: same idea as audio, plus width and height -->
+    <h2>Presentación del curso</h2>
+    <video width="480" height="270" controls>
+        <source src="video.mp4" type="video/mp4">
+        <source src="video.webm" type="video/webm">
+        Tu navegador no soporta vídeo.
+    </video>
+ 
+    <!-- iframe: embeds another page (YouTube: Share > Embed). Replace VIDEO_ID -->
+    <h2>Vídeo en YouTube</h2>
+    <iframe width="480" height="270" src="https://www.youtube.com/embed/VIDEO_ID" title="Vídeo del curso" allowfullscreen></iframe>
+ 
+    <!-- svg: a vector image written as code -->
+    <h2>Logo en SVG</h2>
+    <svg width="120" height="120">
+        <circle cx="60" cy="60" r="50" stroke="black" stroke-width="3" fill="orange" />
+    </svg>
+ 
+    <!-- ===================== FORM ===================== -->
+ 
+    <!-- form: action = where the data goes, method = get or post. Never put a form inside another form -->
+    <h2>Formulario de inscripción</h2>
+    <form action="#" method="post">
+ 
+        <!-- fieldset groups related fields, legend is its title -->
+        <fieldset>
+            <legend>Datos personales</legend>
+ 
+            <!-- label for = the id of the input. placeholder = grey hint inside the box -->
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" size="20" placeholder="Federico Fernández">
+            <br><br>
+ 
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" placeholder="nombre@alu.ua.es">
+            <br><br>
+ 
+            <label for="clave">Contraseña:</label>
+            <input type="password" id="clave" name="clave" placeholder="Mínimo 8 caracteres">
+            <br><br>
+ 
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="600 000 000">
+            <br><br>
+ 
+            <label for="nacimiento">Fecha de nacimiento:</label>
+            <input type="date" id="nacimiento" name="nacimiento">
+            <br><br>
+ 
+            <label for="foto">Foto:</label>
+            <input type="file" id="foto" name="foto" accept="image/*">
+        </fieldset>
+        <br>
+ 
+        <fieldset>
+            <legend>Curso</legend>
+ 
+            <!-- radio: choose ONE. All share the same name -->
+            <p>Turno:</p>
+            <input type="radio" id="manana" name="turno" value="manana">
+            <label for="manana">Mañana</label>
+            <input type="radio" id="tarde" name="turno" value="tarde">
+            <label for="tarde">Tarde</label>
+            <br><br>
+ 
+            <!-- checkbox: choose zero or more -->
+            <p>Optativas:</p>
+            <input type="checkbox" id="nube" name="optativas" value="nube">
+            <label for="nube">Nube</label>
+            <input type="checkbox" id="ingles" name="optativas" value="ingles">
+            <label for="ingles">Inglés técnico</label>
+            <br><br>
+ 
+            <!-- select + option. selected = default option -->
+            <label for="ciclo">Ciclo:</label>
+            <select id="ciclo" name="ciclo">
+                <option value="1daw" selected="selected">1º DAW</option>
+                <option value="2daw">2º DAW</option>
+                <option value="1asir">1º ASIR</option>
+            </select>
+            <br><br>
+ 
+            <label for="color">Color favorito:</label>
+            <input type="color" id="color" name="color" value="#ff0000">
+            <br><br>
+ 
+            <label for="nivel">Nivel de programación (0 a 10):</label>
+            <input type="range" id="nivel" name="nivel" min="0" max="10">
+        </fieldset>
+        <br>
+ 
+        <fieldset>
+            <legend>Comentarios</legend>
+ 
+            <!-- textarea: cols = width in characters, rows = height in lines -->
+            <label for="comentario">¿Algún comentario?</label><br>
+            <textarea id="comentario" name="comentario" cols="40" rows="5" placeholder="Escribe aquí tu comentario"></textarea>
+        </fieldset>
+        <br>
+ 
+        <!-- submit sends the form, reset clears it. value = text on the button -->
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar">
+ 
+    </form>
+ 
+</body>
+</html>

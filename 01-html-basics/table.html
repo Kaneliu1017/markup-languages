@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horario 1º DAW</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+ 
+    <h1>Calendario del curso 1º DAW</h1>
+ 
+    <!-- ===================== TABLE 1: WEEKLY TIMETABLE ===================== -->
+    <table>
+ 
+        <!-- caption: title of the table, right after <table> -->
+        <caption>Horario semanal </caption>
+ 
+        <!-- colgroup + col: group columns. span="5" = the next 5 columns -->
+        <colgroup>
+            <col>
+            <col span="5">
+        </colgroup>
+ 
+        <!-- thead: header rows. th = header cell -->
+        <thead>
+            <tr>
+                <th>Hora</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+            </tr>
+        </thead>
+ 
+        <!-- tbody: body rows -->
+        <tbody>
+            <!-- rowspan="2": the cell covers this row and the one below -->
+            <tr>
+                <th>8:00 - 8:55</th>
+                <td rowspan="2">Programación</td>
+                <td>Lenguajes de Marcas</td>
+                <td rowspan="2">Bases de Datos</td>
+                <td>Sistemas Informáticos</td>
+                <td rowspan="2">IPE</td>
+            </tr>
+ 
+            <!-- Fewer td here: Monday, Wednesday and Friday are covered by the rowspans above -->
+            <tr>
+                <th>8:55 - 9:50</th>
+                <td rowspan="2">Sistemas Informáticos</td>
+                <td rowspan="2">Entornos de Desarrollo</td>
+            </tr>
+ 
+            <tr>
+                <th>9:50 - 10:45</th>
+                <td>Lenguajes de Marcas</td>
+                <td>Programación</td>
+                <td>Bases de Datos</td>
+            </tr>
+ 
+            <!-- colspan="5": one cell covers the 5 day columns -->
+            <tr>
+                <th>10:45 - 11:15</th>
+                <td colspan="5">RECREO</td>
+            </tr>
+ 
+            <tr>
+                <th>11:15 - 12:10</th>
+                <td rowspan="2">Bases de Datos</td>
+                <td rowspan="2">Programación</td>
+                <td rowspan="2">Sistemas Informáticos</td>
+                <td rowspan="2">Programación</td>
+                <td>Programación</td>
+            </tr>
+ 
+            <tr>
+                <th>12:10 - 13:05</th>
+                <td>Lenguajes de Marcas</td>
+            </tr>
+ 
+            <tr>
+                <th>13:05 - 14:00</th>
+                <td>Entornos de Desarrollo</td>
+                <td>IPE</td>
+                <td>Inglés Profesional</td>
+                <td>Lenguajes de Marcas</td>
+                <td>Inglés Profesional</td>
+            </tr>
+        </tbody>
+ 
+        <!-- tfoot: footer rows -->
+        <tfoot>
+            <tr>
+                <th>Total</th>
+                <td colspan="5">6 horas al día &middot; 30 horas a la semana</td>
+            </tr>
+        </tfoot>
+ 
+    </table>
+    <br>
+ 
+    <!-- ===================== TABLE 2: SUBJECTS ===================== -->
+    <table>
+        <caption>Asignaturas y horas semanales</caption>
+ 
+        <thead>
+            <tr>
+                <th>Código</th>
+                <th>Asignatura</th>
+                <th>Horas</th>
+            </tr>
+        </thead>
+ 
+        <tbody>
+            <tr>
+                <td>PROG</td>
+                <td>Programación</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>BD</td>
+                <td>Bases de Datos</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>SIN</td>
+                <td>Sistemas Informáticos</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>LM</td>
+                <td>Lenguajes de Marcas</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>ED</td>
+                <td>Entornos de Desarrollo</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>IPE</td>
+                <td>Itinerario Personal para la Empleabilidad</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>ING</td>
+                <td>Inglés Profesional</td>
+                <td>2</td>
+            </tr>
+        </tbody>
+ 
+        <!-- colspan="2" joins Código + Asignatura for the label -->
+        <tfoot>
+            <tr>
+                <td colspan="2">Total</td>
+                <td>30</td>
+            </tr>
+        </tfoot>
+    </table>
+ 
+    <!--
+        SYNTAX USED
+        <table>      the table
+        <caption>    title of the table
+        <colgroup>   group of columns, with <col> for each (span = how many)
+        <thead>      header rows
+        <tbody>      body rows
+        <tfoot>      footer rows
+        <tr>         a row
+        <th>         a header cell
+        <td>         a normal cell
+        colspan      merges cells to the RIGHT (along the row)
+        rowspan      merges cells BELOW (down the column)
+        Old attribute border="1" on <table> still works but is not standard.
+    -->
+ 
+</body>
+</html>
