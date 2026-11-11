@@ -1,8 +1,5 @@
 # markup-languages
 HTML, CSS and markup/data-exchange exercises from the Markup Languages module.
-
-# Markup Languages — DAW Year 1
-
 Exercises and practice from the Markup Languages module: markup and
 data-interchange languages used in web development.
 
