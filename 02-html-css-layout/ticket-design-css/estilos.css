@@ -1,0 +1,44 @@
+body {
+  background-color: #eee8ff;
+  font-family: Arial, sans-serif;
+  color: #28223e;
+}
+
+.tarjeta {
+  width: 384px;
+  background-color: white;
+  border: 3px solid #28223e;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.cabecera {
+  background-color: #6842e8;
+  color: white;
+  padding: 25px;
+  border-bottom: 3px solid #28223e;
+}
+
+.contenido {
+  background-color: white;
+  padding: 25px;
+}
+
+.datos {
+  background-color: #eee8ff;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+.aviso {
+  background-color: #d9ccff;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.pie {
+  background-color: #28223e;
+  color: white;
+  padding: 15px;
+  border-top: 3px dashed #6842e8;
+}
